@@ -90,6 +90,17 @@ static void test_malloc_4(void) {
      */
 }
 
+static void test() {
+    //        test_global();
+    //        test_stack();
+    //        test_malloc();
+    //        test_malloc_2();
+    //        test_malloc_3();
+            test_malloc_4();
+}
+
+#import "Sunnyxx/Interview.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -98,13 +109,10 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"MallocBlock is %@", mallocBlock);
 //
 //        NSLog(@"Hello, World!");
+    
+//        test();
         
-//        test_global();
-//        test_stack();
-//        test_malloc();
-//        test_malloc_2();
-//        test_malloc_3();
-        test_malloc_4();
+        [Interview test];
     }
     return 0;
 }

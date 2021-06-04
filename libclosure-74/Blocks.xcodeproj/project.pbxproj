@@ -34,6 +34,8 @@
 
 /* Begin PBXBuildFile section */
 		04DD0E8E255D0CB600E09538 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DD0E8D255D0CB600E09538 /* main.m */; };
+		6DFC38452668AEBE00C4DFC0 /* Interview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC38442668AEBE00C4DFC0 /* Interview.m */; };
+		6DFC38542668B07700C4DFC0 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DFC38532668B07700C4DFC0 /* fishhook.c */; };
 		831D5AD6122788D500E4A1EC /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E86E1EBF11543C0B0055083F /* Block_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		831D5AD7122788D500E4A1EC /* Block.h in Headers */ = {isa = PBXBuildFile; fileRef = E86E1EC011543C0B0055083F /* Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		831D5AD9122788D500E4A1EC /* data.c in Sources */ = {isa = PBXBuildFile; fileRef = E86E1EC111543C0B0055083F /* data.c */; };
@@ -92,6 +94,10 @@
 /* Begin PBXFileReference section */
 		04DD0E8B255D0CB600E09538 /* KCBlockDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KCBlockDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DD0E8D255D0CB600E09538 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DFC38432668AEBE00C4DFC0 /* Interview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interview.h; sourceTree = "<group>"; };
+		6DFC38442668AEBE00C4DFC0 /* Interview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interview.m; sourceTree = "<group>"; };
+		6DFC38522668B07700C4DFC0 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		6DFC38532668B07700C4DFC0 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		831D5ADF122788D500E4A1EC /* libclosure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclosure.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EF75961507C1CE00581A2E /* libclosure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclosure.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AAC0C705546C1D00DB518D /* libsystem_blocks.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsystem_blocks.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				04DD0E8D255D0CB600E09538 /* main.m */,
+				6DFC38422668AEBE00C4DFC0 /* Sunnyxx */,
 			);
 			path = KCBlockDemo;
 			sourceTree = "<group>";
@@ -179,6 +186,17 @@
 				E86E1EC011543C0B0055083F /* Block.h */,
 			);
 			name = Headers;
+			sourceTree = "<group>";
+		};
+		6DFC38422668AEBE00C4DFC0 /* Sunnyxx */ = {
+			isa = PBXGroup;
+			children = (
+				6DFC38432668AEBE00C4DFC0 /* Interview.h */,
+				6DFC38442668AEBE00C4DFC0 /* Interview.m */,
+				6DFC38532668B07700C4DFC0 /* fishhook.c */,
+				6DFC38522668B07700C4DFC0 /* fishhook.h */,
+			);
+			path = Sunnyxx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DD0E8E255D0CB600E09538 /* main.m in Sources */,
+				6DFC38542668B07700C4DFC0 /* fishhook.c in Sources */,
+				6DFC38452668AEBE00C4DFC0 /* Interview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
