@@ -6,18 +6,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "../SelfTest/SelfTest.h"
+#import "../Sunnyxx/Interview.h"
 
-int main(int argc, const char * argv[]) {
+int main(__unused int argc, __unused const char * argv[]) {
     @autoreleasepool {
   
-        NSObject *objc = [[NSObject alloc] init];
-        NSLog(@"%ld",CFGetRetainCount((__bridge CFTypeRef)(objc)));
-        void (^kcBlock)(void) = ^void {
-            NSLog(@"%ld",CFGetRetainCount((__bridge CFTypeRef)(objc)));
-        };
-        kcBlock();
-        NSLog(@"KCBlock is %@", kcBlock);
+//        NSObject *objc = [[NSObject alloc] init];
+//        NSLog(@"%ld",CFGetRetainCount((__bridge CFTypeRef)(objc)));
+//        void (^kcBlock)(void) = ^void {
+//            NSLog(@"%ld",CFGetRetainCount((__bridge CFTypeRef)(objc)));
+//        };
+//        kcBlock();
+//        NSLog(@"KCBlock is %@", kcBlock);
         
+//        [SelfTest test];
+        [Interview test];
     }
     return 0;
 }

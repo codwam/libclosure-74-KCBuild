@@ -103,7 +103,7 @@ static void __my_block_func_1(void *__cself, ...) {
         [blockInvocation setArgument:&__cself atIndex:0];
         
         NSMutableArray *paramArray = [[NSMutableArray alloc] init];
-        for (NSInteger i = 1; i < methodSignature.numberOfArguments; ++i) {
+        for (NSUInteger i = 1; i < methodSignature.numberOfArguments; ++i) {
             const char *s = [methodSignature getArgumentTypeAtIndex:i];
             NSString *str = [NSString stringWithUTF8String:s];
             [paramArray addObject:str];

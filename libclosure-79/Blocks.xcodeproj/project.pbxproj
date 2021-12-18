@@ -44,6 +44,9 @@
 		831D5ADA122788D500E4A1EC /* runtime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86E1EC211543C0B0055083F /* runtime.cpp */; };
 		96EF759B1507C27500581A2E /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = E86E1EC111543C0B0055083F /* data.m */; };
 		96EF759C1507C27500581A2E /* runtime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E86E1EC211543C0B0055083F /* runtime.cpp */; };
+		B78120D4276DC34400DC6630 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = B78120D0276DC34400DC6630 /* fishhook.c */; };
+		B78120D5276DC34400DC6630 /* Interview.m in Sources */ = {isa = PBXBuildFile; fileRef = B78120D1276DC34400DC6630 /* Interview.m */; };
+		B78120D8276DC37200DC6630 /* SelfTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B78120D7276DC37200DC6630 /* SelfTest.m */; };
 		E86E1EC311543C0B0055083F /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = E86E1EBF11543C0B0055083F /* Block_private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E86E1EC411543C0B0055083F /* Block.h in Headers */ = {isa = PBXBuildFile; fileRef = E86E1EC011543C0B0055083F /* Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E86E1EC511543C0B0055083F /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = E86E1EC111543C0B0055083F /* data.m */; };
@@ -102,6 +105,12 @@
 		6E8C74E72327094A00627AC0 /* Blocks.dirty */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Blocks.dirty; sourceTree = "<group>"; };
 		831D5ADF122788D500E4A1EC /* libclosure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclosure.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EF75961507C1CE00581A2E /* libclosure.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclosure.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78120CE276DC34400DC6630 /* Interview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interview.h; sourceTree = "<group>"; };
+		B78120D0276DC34400DC6630 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		B78120D1276DC34400DC6630 /* Interview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interview.m; sourceTree = "<group>"; };
+		B78120D2276DC34400DC6630 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		B78120D6276DC37200DC6630 /* SelfTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfTest.h; sourceTree = "<group>"; };
+		B78120D7276DC37200DC6630 /* SelfTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfTest.m; sourceTree = "<group>"; };
 		D2AAC0C705546C1D00DB518D /* libsystem_blocks.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libsystem_blocks.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86E1EBF11543C0B0055083F /* Block_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block_private.h; sourceTree = "<group>"; };
 		E86E1EC011543C0B0055083F /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
@@ -168,6 +177,8 @@
 				04372F0426D381E900AF39BF /* KCBlockBuild */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				6E8C74E62326FB5A00627AC0 /* Build Configuration */,
+				B78120CC276DC33D00DC6630 /* SelfTest */,
+				B78120CD276DC34400DC6630 /* Sunnyxx */,
 			);
 			name = Blocks;
 			sourceTree = "<group>";
@@ -199,6 +210,28 @@
 				6E8C74E42326F89300627AC0 /* Blocks.xcconfig */,
 			);
 			name = "Build Configuration";
+			sourceTree = "<group>";
+		};
+		B78120CC276DC33D00DC6630 /* SelfTest */ = {
+			isa = PBXGroup;
+			children = (
+				B78120D6276DC37200DC6630 /* SelfTest.h */,
+				B78120D7276DC37200DC6630 /* SelfTest.m */,
+			);
+			name = SelfTest;
+			path = ../SelfTest;
+			sourceTree = "<group>";
+		};
+		B78120CD276DC34400DC6630 /* Sunnyxx */ = {
+			isa = PBXGroup;
+			children = (
+				B78120CE276DC34400DC6630 /* Interview.h */,
+				B78120D1276DC34400DC6630 /* Interview.m */,
+				B78120D0276DC34400DC6630 /* fishhook.c */,
+				B78120D2276DC34400DC6630 /* fishhook.h */,
+			);
+			name = Sunnyxx;
+			path = ../Sunnyxx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +418,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04372F0626D381E900AF39BF /* main.m in Sources */,
+				B78120D4276DC34400DC6630 /* fishhook.c in Sources */,
+				B78120D8276DC37200DC6630 /* SelfTest.m in Sources */,
+				B78120D5276DC34400DC6630 /* Interview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +594,7 @@
 			baseConfigurationReference = 6E8C74E42326F89300627AC0 /* Blocks.xcconfig */;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = LIBC_NO_LIBCRASHREPORTERCLIENT;
 				HEADER_SEARCH_PATHS = (
 					"$(DSTROOT)/usr/include/**",
@@ -583,6 +620,7 @@
 			baseConfigurationReference = 6E8C74E42326F89300627AC0 /* Blocks.xcconfig */;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = LIBC_NO_LIBCRASHREPORTERCLIENT;
 				HEADER_SEARCH_PATHS = (
 					"$(DSTROOT)/usr/include/**",
